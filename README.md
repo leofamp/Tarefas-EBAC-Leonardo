@@ -1,2 +1,2 @@
 # Tarefas-EBAC-Leonardo
-Tarefa MOD5
+Todas as tarefas do Curto da EBAC
