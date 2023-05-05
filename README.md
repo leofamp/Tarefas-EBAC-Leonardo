@@ -1,2 +1,2 @@
 # Tarefas-EBAC-Leonardo
-Todas as tarefas do Curto da EBAC
+Todas as tarefas do curso da EBAC
