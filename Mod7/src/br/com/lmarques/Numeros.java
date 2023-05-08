@@ -4,17 +4,17 @@ public class Numeros {
 	/**
 	 * Declarando as variáveis do problema.
 	 */
-	public float primeiroNumero;
-	public float segundoNumero;
-	public float soma;
-	public float subtracao;
-	public float multiplicacao;
-	public float divisao;
+	private float primeiroNumero;
+	private float segundoNumero;
+	private float soma;
+	private float subtracao;
+	private float multiplicacao;
+	private float divisao;
 
 	/**
 	 * Funções de cada variável.
 	 * @return
-	 */
+	 */ 
 	public float getPrimeiroNumero() {
 		return primeiroNumero;
 	}
@@ -32,19 +32,23 @@ public class Numeros {
 	}
 	
 	public float fazSoma() {
-		return primeiroNumero + segundoNumero;
+		this.soma = primeiroNumero + segundoNumero;
+		return soma;
 	}
 	
 	public float fazSubtracao() {
-		return primeiroNumero - segundoNumero;
+		this.subtracao = primeiroNumero - segundoNumero;
+		return subtracao;
 	}
 	
 	public float fazDivisao() {
-		return primeiroNumero / segundoNumero;
+		this.divisao = primeiroNumero / segundoNumero;
+		return divisao;
 	}
 	
 	public float fazMultiplicacao() {
-		return primeiroNumero * segundoNumero;
+		this.multiplicacao = primeiroNumero * segundoNumero;
+		return multiplicacao;
 	}
 
 }

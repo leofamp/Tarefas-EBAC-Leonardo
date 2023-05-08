@@ -2,13 +2,8 @@ package br.com.lmarques;
 
 import java.util.Scanner;
 
-
 public class App {
-	
-	/**
-	 * Rodando a calculadora.
-	 * @param args
-	 */
+
 	public static void main(String[] args) {
 		
 		@SuppressWarnings("resource")
@@ -16,22 +11,21 @@ public class App {
 		Numeros numeros = new Numeros();
 		Texto texto = new Texto();
 		
-		System.out.println(texto.mostraCalculadora());
-		/**
-		 * Inputs.
-		 */
+		System.out.println(texto.mostraExercicio());
+		
 		System.out.print(texto.mostraTexto1());
 		numeros.setPrimeiroNumero(teclado.nextFloat());
+		
 		System.out.print(texto.mostraTexto2());
 		numeros.setSegundoNumero(teclado.nextFloat());
-		/**
-		 * Saídas.
-		 */
-		System.out.printf("\nA soma é: %.2f \n", numeros.fazSoma());
-		System.out.format("A subtração é: %.2f \n", numeros.fazSubtracao());
-		System.out.format("A divisão é: %.2f \n", numeros.fazDivisao());
-		System.out.format("A multiplicação é: %.2f \n", numeros.fazMultiplicacao());
 		
+		System.out.print(texto.mostraTexto3());
+		numeros.setTerceiroNumero(teclado.nextFloat());
+		
+		System.out.print(texto.mostraTexto4());
+		numeros.setQuartoNumero(teclado.nextFloat());
+		
+		System.out.printf("\nA média das suas QUATRO notas é : %.2f", numeros.fazMedia());
 	}
-	
+
 }
