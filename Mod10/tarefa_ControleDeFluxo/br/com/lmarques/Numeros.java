@@ -69,16 +69,16 @@ public class Numeros {
 		return quartaNota;
 	}
 	
-	public String getMsgAprovado() {
+	public String fazMensagem() {
 
 		if (fazMedia() >= 7) {
 			return "\n\nVocê foi APROVADO, parabens!";
 			
 		}else if (fazMedia() < 7 && fazMedia() >= 5) {
-			return "\n\nVocê foi APROVADO, parabens!";
+			return "\n\nVocê está de RECUPERAÇÃO!";
 		
 		}else {
-			return "\n\nVocê foi APROVADO, parabens!";
+			return "\n\nVocê foi REPROVADO!";
 		}
 	}
 

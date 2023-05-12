@@ -10,7 +10,6 @@ public class App {
 		Scanner teclado = new Scanner(System.in);
 		Numeros numeros = new Numeros();
 		Texto texto = new Texto();
-		Aprovacao aprovacao = new Aprovacao();
 		
 		System.out.println(texto.mostraExercicio());
 		System.out.println(texto.mostraRegra());
@@ -33,8 +32,7 @@ public class App {
 		System.out.printf("\nNota 4: %.2f", numeros.getQuartaNota());
 		System.out.printf("\n\nA média das suas QUATRO notas é : %.2f", numeros.fazMedia());
 		
-		System.out.println(aprovacao.getMsgAprovado(numeros.fazMedia()));
-		
+		System.out.println(numeros.fazMensagem());
 	}
 
 }
