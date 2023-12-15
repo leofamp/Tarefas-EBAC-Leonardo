@@ -16,10 +16,10 @@ public class Alfabetica {
 		
 		Arrays.sort(nomes);
 		System.out.print("\nNomes em ordem alfabética:");
-		//for (int i = 0; i < nomes.length; i++) {
-		//	System.out.print(" " + nomes[i]);
-		//}
-		System.out.println(Arrays.toString(nomes));
+		for (int i = 0; i < nomes.length; i++) {
+			System.out.print(" " + nomes[i]);
+		}
+		//System.out.println(Arrays.toString(nomes));
 		
 	}
 

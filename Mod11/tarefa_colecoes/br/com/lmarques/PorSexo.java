@@ -17,6 +17,7 @@ public class PorSexo {
 		System.out.println("Digite nomes separados por vírgula(,) e com '-m' para HOMENS e '-f' para MULHERES: ");
 		System.out.println("Ex: Marcos-m,Laura-f,...,João-m");
 		String[] nomes = (teclado.nextLine().split(","));
+		System.out.println(Arrays(nomes));
 		
 		for(int i = 0; i< nomes.length; i++) {
 			if (nomes[i].contains("-m")) {
@@ -34,6 +35,11 @@ public class PorSexo {
 		System.out.println("\nHomens:" + nomesMasc);
 		System.out.println("Mulheres:" + nomesFem);
 		
+	}
+
+	private static char[] Arrays(String[] nomes) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
