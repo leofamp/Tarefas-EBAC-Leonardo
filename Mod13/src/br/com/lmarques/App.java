@@ -25,7 +25,7 @@ public class App {
 		
 		
 		
-		pessoaFisica.nomeCompleto();
+		pessoaFisica.nomeCompleto(pessoaFisica.getNome(), pessoaFisica.getSobrenome());
 		System.out.println("Cpf: " + pessoaFisica.getCpf());
 		System.out.println("Endereço: " + pessoaFisica.getEndereco());
 		System.out.println("Ano de Nascimento: " + pessoaFisica.getAnoNascimento());

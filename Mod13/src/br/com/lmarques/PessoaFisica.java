@@ -33,7 +33,7 @@ public class PessoaFisica extends Pessoa{
 		this.cpf = cpf;
 	
 	}
-	public void nomeCompleto() {
+	public void nomeCompleto(String  nome, String sobrenome) {
 		System.out.println("Nome: " + nome + " " + sobrenome);
 	}
 	
