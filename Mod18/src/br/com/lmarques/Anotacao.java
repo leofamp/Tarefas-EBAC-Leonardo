@@ -1,5 +1,5 @@
 package br.com.lmarques;
 
-public interface ITabela {
+public interface Anotacao {
 
 }
