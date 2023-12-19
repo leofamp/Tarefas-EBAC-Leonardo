@@ -1,5 +1,7 @@
 package br.com.lmarques;
 
-public interface Anotacao {
 
+@Tabela("Tabela")
+public class Anotacao{
+	
 }
