@@ -21,21 +21,21 @@ public class ContratoDaoTest {
     public void buscar() {
     	IContratoDao dao = new ContratoDao();
         Boolean res = dao.buscar();
-        Assertions.assertEquals(true, res);
+        Assert.assertEquals(true, res);
     }
 
     @Test
     public void excluir() {
     	IContratoDao dao = new ContratoDao();
         Boolean res = dao.excluir();
-        Assertions.assertEquals(false, res);
+        Assert.assertEquals(false, res);
     }
 
     @Test
     public void atualizar() {
     	IContratoDao dao = new ContratoDao();
         String res = dao.atualizar();
-        Assertions.assertEquals("Atualizado", res);
+        Assert.assertEquals("Atualizado", res);
     }
 	
 }

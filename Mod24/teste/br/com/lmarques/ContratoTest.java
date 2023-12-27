@@ -5,37 +5,37 @@ import br.com.lmarques.dao.IContratoDao;
 import br.com.lmarques.service.ContratoService;
 import br.com.lmarques.service.IContratoService;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class ContratoTest {
 	
     @Test
     public void salvar() {
-        IContratoDAO dao = new ContratoDAO();
+        IContratoDao dao = new ContratoDao();
         String res = dao.salvar();
-        Assertions.assertEquals("Salvo", res);
+        Assert.assertEquals("Salvo", res);
     }
 
     @Test
     public void buscar() {
-        IContratoDAO dao = new ContratoDAO();
+    	IContratoDao dao = new ContratoDao();
         Boolean res = dao.buscar();
-        Assertions.assertEquals(true, res);
+        Assert.assertEquals(true, res);
     }
 
     @Test
     public void excluir() {
-        IContratoDAO dao = new ContratoDAO();
+    	IContratoDao dao = new ContratoDao();
         Boolean res = dao.excluir();
-        Assertions.assertEquals(false, res);
+        Assert.assertEquals(false, res);
     }
 
     @Test
     public void atualizar() {
-        IContratoDAO dao = new ContratoDAO();
+    	IContratoDao dao = new ContratoDao();
         String res = dao.atualizar();
-        Assertions.assertEquals("Atualizado", res);
+        Assert.assertEquals("Atualizado", res);
     }
 
 }
