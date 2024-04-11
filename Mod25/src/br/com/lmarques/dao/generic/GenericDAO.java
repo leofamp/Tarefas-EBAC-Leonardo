@@ -24,8 +24,7 @@ public abstract class GenericDAO<T extends Persistente, E extends Serializable> 
         this.singletonMap = SingletonMap.getInstance();
     }
 
-    @SuppressWarnings("unused")
-	public E getChave(T entity) throws TipoChaveNaoEncontradaException {
+    public E getChave(T entity) throws TipoChaveNaoEncontradaException {
         Field[] fields = entity.getClass().getDeclaredFields();
         E returnValue = null;
         for (Field field : fields) {
